@@ -19,7 +19,7 @@
 			</div>
 		</div>
 		<div class="panel-body">
-			<form method="GET" class="form-horizontal" th:object=${filtro}>
+			<form method="GET" class="form-horizontal" th:object="${filtro}">
 				<div class="form-group">
 					<div class="col-sm-4">
 						<div class="input-group">
@@ -35,6 +35,7 @@
 				</div>
 			</form>
 			
+			<div class="table-responsive">
 			<table class="table table-bordered table-striped">
 				<thead>
 					<tr>
@@ -78,6 +79,7 @@
 					</tr>
 				</tbody>
 			</table>
+			</div>
 		</div>
 		
 		<div layout:include = "DialogoConfirmacaoExclusao" ></div>	
