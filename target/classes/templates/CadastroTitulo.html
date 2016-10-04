@@ -9,14 +9,14 @@
 </head>
 
 <section layout:fragment="conteudo">
-<form class="form-horizontal" method="POST" action="/titulos" th:object="${titulo}">
+<form class="form-horizontal" method="POST" th:action="@{/titulos}" th:object="${titulo}">
 	<div layout:include="MensagemGeral"></div>
 	<div layout:include="MensagemErro"></div>
 	<div class="panel panel-default">
     		<div class="panel-heading">
     			<div class="clearfix">
 				<h1 class="panel-title aw-titulo-panel">Novo Titulo</h1>
-				  <a class="btn btn-link aw-link-panel" href="/titulos/">Voltar para a pesquisa</a>
+				  <a class="btn btn-link aw-link-panel" th:href="@{/titulos}">Voltar para a pesquisa</a>
 			</div>
     		</div>
     		
